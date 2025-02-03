@@ -20,8 +20,9 @@ Clone the Repository
    git clone https://github.com/yourusername/genius-ai-chatbot.git
    cd genius-ai-chatbot
 ```
-# Install Dependencies  
-Install the necessary Python packages. If you have a requirements.txt file, run:
-```bash
-pip install -r requirements.txt
-```
+## Downloading Llama 3 from Ollama
+- Navigate to the [Ollama website](https://ollama.ai) and go to the "Download" or "Get Started" section.
+- Download and install the Ollama application for your operating system.
+- Open the Ollama application, search for "Llama 3" in the Models or Marketplace section, and click "Download" or "Install" to add it to your available models.
+- Confirm that Llama 3 is installed and ready to be used in your project.
+
