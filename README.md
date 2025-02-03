@@ -19,8 +19,9 @@ Clone the Repository
 ```bash
    git clone https://github.com/yourusername/genius-ai-chatbot.git
    cd genius-ai-chatbot
-Install Dependencies
-
+```
+# Install Dependencies  
 Install the necessary Python packages. If you have a requirements.txt file, run:
+```bash
 pip install -r requirements.txt
 ```
