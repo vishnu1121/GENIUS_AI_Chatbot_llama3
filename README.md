@@ -26,3 +26,30 @@ Clone the Repository
 - Open the Ollama application, search for "Llama 3" in the Models or Marketplace section, and click "Download" or "Install" to add it to your available models.
 - Confirm that Llama 3 is installed and ready to be used in your project.
 
+## Code Structure
+main.py: The main script containing the chatbot logic, database setup, and conversation loop.
+
+Prompt Template: The chatbot uses a customizable template to generate responses (Use AI for unique templates). The template is defined in the template variable.
+
+# Database Functions:
+
+setup_database(): Initializes the SQLite database and creates the history table if it doesn't exist.  
+get_recent_messages(): Retrieves the most recent messages from the database.  
+add_message(): Adds a new message to the database and updates the cache.
+
+# Context Management:  
+The ChatbotConfig class manages the context length and adjusts it based on the complexity of user input.
+
+# Customizatio  
+Prompt Template: You can modify the template variable in the script to change the chatbot's greeting and capabilities.  
+Context Length: Adjust the default_context_length in the ChatbotConfig class to control how much conversation history the chatbot considers.  
+Model: You can switch to a different model by changing the model parameter in the OllamaLLM initialization. Choose your own model depending on your specifications of your PC or running host.
+
+# Troubleshooting  
+Ollama Server Not Running: Ensure the Ollama server is running and accessible.If not, start the server and try again.  
+Database Issues: If the database becomes corrupted or inaccessible, delete the conversation_history.db file and restart the chatbot to create a new database.
+
+
+# Contributing  
+Contributions are welcome! If you have suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+
