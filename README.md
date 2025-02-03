@@ -40,7 +40,7 @@ add_message(): Adds a new message to the database and updates the cache.
 # Context Management:  
 The ChatbotConfig class manages the context length and adjusts it based on the complexity of user input.
 
-# Customizatio  
+# Customization
 Prompt Template: You can modify the template variable in the script to change the chatbot's greeting and capabilities.  
 Context Length: Adjust the default_context_length in the ChatbotConfig class to control how much conversation history the chatbot considers.  
 Model: You can switch to a different model by changing the model parameter in the OllamaLLM initialization. Choose your own model depending on your specifications of your PC or running host.
@@ -49,7 +49,31 @@ Model: You can switch to a different model by changing the model parameter in th
 Ollama Server Not Running: Ensure the Ollama server is running and accessible.If not, start the server and try again.  
 Database Issues: If the database becomes corrupted or inaccessible, delete the conversation_history.db file and restart the chatbot to create a new database.
 
+## Future extensions (some of them might be complex to design):  
+Enhanced Context Complexity Analysis: The current method in adjust_context_based_on_complexity uses a simple word count. We can consider more advanced natural language processing techniques to assess the complexity of the conversation.
+
+Scalability of Cached Messages: The LRU cache is limited to 200 calls, which is fine for a small-scale application. For larger-scale or long-running applications, I might need to implement a more sophisticated caching or message retrieval strategy.
+
+Multi-Model Support: Integrating support for additional language models or API providers (e.g., OpenAI's GPT, Cohere, Anthropic) and allow users to switch between them.
+
+Advanced NLP Features: Add sentiment analysis, named entity recognition, or intent detection to better understand and respond to user queries.
+
+Frontend Integration: Develop a web-based interface using frameworks like React, Vue, or Angular to provide a more interactive and visually appealing experience.
+
+Voice Integration: Incorporate speech-to-text and text-to-speech functionalities for a voice-enabled chatbot.
+
+Third-Party API Integrations: Integrate with external services such as:
+- Weather APIs: to provide weather updates.
+- News APIs: to fetch the latest headlines.
+- Calendar/Scheduling APIs: to set reminders or schedule events.
+
+Authentication and Authorization: Implement user accounts, login systems, and session management to personalize conversations.
+
+User Profiles and History: Store individual conversation histories per user and allow for profile customization and personalized responses.
+
+Feedback and Learning: Incorporate mechanisms for users to provide feedback, helping the chatbot learn and improve its responses over time.
 
 # Contributing  
-Contributions are welcome! If you have suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+Contributions are welcome! If you have suggestions, bug reports, or feature requests, please open an issue or submit a pull request.  
+This chatbot needs customizations :)
 
