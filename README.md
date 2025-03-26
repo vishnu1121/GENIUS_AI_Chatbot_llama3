@@ -1,4 +1,4 @@
-#Summary(What I Did):
+# Summary(What I Did):
 - Designed GENIUS (General Expert Navigator for Intelligent User Support an AI chatbot using Llama 3 and LangChain, integrating dynamic context management (100+ SQLite-stored interactions) to boost response relevance by 40%, and hosted locally via Ollama for secure, privacy-focused offline inference.
 - Optimized chatbot performance by implementing adaptive context adjustment and LRU caching, reducing response latency by 30% while scaling to handle complex, multi-turn interactions with 95% accuracy.
 - Acquired advanced Python scripting, LangChain integration, and SQLite optimisation skills.
