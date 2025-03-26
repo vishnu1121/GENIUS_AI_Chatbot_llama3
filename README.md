@@ -3,7 +3,7 @@
 - Optimized chatbot performance by implementing adaptive context adjustment and LRU caching, reducing response latency by 30% while scaling to handle complex, multi-turn interactions with 95% accuracy.
 - Acquired advanced Python scripting, LangChain integration, and SQLite optimisation skills.
 - This project can be enhanced with other new features such as a modular AI platform via Docker deployment, third-party API integrations (e.g., weather/translations), and niche dataset fine-tuning while open-sourcing the project to foster community-driven plugins and UI/UX improvements.
-- 
+
 # GENIUS_AI_Chatbot_llama3
 GENIUS is a conversational AI chatbot powered by Llama 3, designed to assist users with tasks, answer questions, and provide intelligent recommendations. It stores conversation history in an SQLite database, dynamically adjusts context length, and offers context-aware responses for seamless interaction.
 
